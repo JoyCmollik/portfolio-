@@ -145,8 +145,8 @@ header {
 
 .banner-text h2 {
     font-family: 'ubuntu', sans-serif;
-    font-size: 20px;
-    width: 80%;
+    font-size: 19px;
+    width: 70%;
     margin: 10px auto;
     text-transform: capitalize;
     text-align: center;
@@ -254,12 +254,10 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(./img/blackhexagon.jpg) center/cover fixed no-repeat;
-
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./img/bookbox.jpg) center/cover fixed no-repeat;
         flex: 1 0 auto;
         min-height: calc(100vh - 59.9833px);
-        clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%);
-        box-shadow: 0 40px 50px rgba(0, 0, 0, 0.7);
+        clip-path: polygon(40% 0, 100% 0, 80% 100%, 10% 100%);
     }
 
     .banner-text h1 {
@@ -271,7 +269,7 @@ header {
     .banner-text h2 {
         position: absolute;
         bottom: 40%;
-        left: 25%;
+        left: 29%;
     }
 
     .banner-btn {
@@ -388,28 +386,33 @@ header {
     }
 
     .about-corner-left {
-        flex: 0 0 20%;
-        max-width: 20%;
+        flex: 0 0 5%;
         background: #00a7e1;
         min-height: 40vh;
+        -webkit-box-shadow: -14px 15px 34px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -14px 15px 34px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: -14px 15px 34px 0px rgba(0, 0, 0, 0.75);
     }
 
     .about-corner-right {
-        flex: 0 0 20%;
+        flex: 0 0 5%;
         background: #00a7e1;
         min-height: 40vh;
+        -webkit-box-shadow: 14px 15px 34px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 14px 15px 34px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 14px 15px 34px 0px rgba(0, 0, 0, 0.75);
     }
 
     .about-img {
-        flex: 0 0 35%;
+        flex: 0 0 40%;
         text-align: center;
     }
 
     .about-text {
         flex: 0 0 40%;
         text-align: center;
-        margin-right: 15%;
-        font-size: 25px;
+        margin-right: 14%;
+        font-size: 31px;
     }
 }
 
@@ -424,7 +427,7 @@ header {
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./img/aboutshorcut.jpg) center/cover fixed no-repeat;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
-    padding: 5rem;
+    padding: 2.5rem;
 }
 
 .shortcuts .link {
@@ -433,12 +436,13 @@ header {
 }
 
 .shortcuts .link a {
+    display: block;
     color: #ffc914;
-    font-size: 4rem;
+    font-size: 2.95rem;
     background: transparent;
-    transition: background 1s ease, color 1s ease;
     padding: 0.8rem 1.1rem;
-    border-radius: 2.5rem;
+    transition: background 1s ease, color 1s ease;
+    border-radius: 1.54rem;
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
 }
 
@@ -456,7 +460,7 @@ header {
 
 @media screen and (max-width: 576px) {
     .shortcuts {
-        padding: 4rem;
+        padding: 2.5rem;
     }
 
     .shortcuts .link {
@@ -472,6 +476,76 @@ header {
 
     .shortcuts .link h4 {
         margin: 1rem 0;
+    }
+}
+
+/*quotes*/
+.quotes {
+    padding: 70px 0;
+}
+
+.quotes-center {
+    max-width: 86vw;
+    margin: 0 auto;
+    padding: 40px 25px;
+    display: flex;
+    justify-content: space-between;
+    color: #474747;
+}
+
+.quotes-icon {
+    font-size: 70px;
+    margin-right: 25px;
+    color: #ffc914;
+}
+
+.quotes-icon-right {
+    font-size: 70px;
+    margin-left: 25px;
+    color: #ffc914;
+}
+
+.quotes-text {
+    font-family: 'montserrat', sans-serif;
+}
+
+.quotes-text h4 {
+    text-align: justify;
+    font-size: 25px;
+}
+
+.quotes-text h2 {
+    margin-left: 25%;
+}
+
+@media screen and (max-width: 776px) {
+    .quotes-center {
+        max-width: 90vw;
+    }
+
+    .quotes-icon {
+        font-size: 40px;
+        margin-right: 10px;
+        color: #ffc914;
+    }
+
+    quotes-icon-right {
+        font-size: 40px;
+        margin-left: 10px;
+        color: #ffc914;
+    }
+
+    .quotes-text {
+        font-family: 'montserrat', sans-serif;
+    }
+
+    .quotes-text h4 {
+        text-align: justify;
+        margin: 0 0 10px 0;
+    }
+
+    .quotes-text h2 {
+        margin-left: 10%;
     }
 }
 
@@ -669,6 +743,7 @@ header {
 
 .project-img img {
     width: 100% !important;
+    height: 205px;
     display: block;
     min-height: 100%;
     transition: opacity 1s ease, transform 1s ease;
@@ -802,7 +877,7 @@ header {
     .interests-center {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 4rem;
+        grid-column-gap: 2.17rem;
         grid-row-gap: 2rem;
     }
 
@@ -875,7 +950,7 @@ header {
 /*contact*/
 .contact {
     padding: 40px 0 80px 0;
-    background: #0C0A3E;
+    background: #00a7e1;
     clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 0 100%);
 }
 
@@ -920,6 +995,7 @@ header {
     padding: 10px 15px;
     margin: 10px 0;
     background: transparent;
+    color: #f5f3f5;
 }
 
 .contact-form form input::placeholder,

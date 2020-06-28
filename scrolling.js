@@ -1,4 +1,4 @@
-$('nav a, .link a, .banner-btn a').click(function (link) {
+$('nav a, .index a, .banner-btn a').click(function (link) {
     link.preventDefault();
 
     let target = $(this).attr('href');
